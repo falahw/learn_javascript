@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- ini BOOTSTRAP CSS-nya ONLINE -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- ini CSS dari FOLDER 'index.html' -->
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript in Steroid</title>
+</head>
+
+<body>
+    <!-- CHALLENGE-1 : Your Age in Days -->
+    <div class="container-1">
+        <h2>CHALLENGE-1: Your Age in Days</h2>
+    
+        <div class="flex-box-container-1">
+            <div>
+                <!-- TAG 'btn-primary' ini ADA di file CSS BOOTSTRAP -->
+                <button class="btn btn-primary" onclick="ageInDays()">Click Me!</button>
+            </div>
+        
+            <div>
+                <!-- TAG 'btn-danger' ini ADA di file CSS BOOTSTRAP -->
+                <button class="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+    </div>
+
+    <!--
+        CHALLENGE-2 : Cat Generator
+    -->
+    <div class="container-2">
+        <h2>CHALLENGE-2 : Cat Generator</h2>
+        <div class="flex-box-container-2">
+            <!-- ini TOMBOL untuk MUNCULIN GAMBAR KUCING -->
+            <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+        
+            <div>
+                <!-- TAG 'btn-danger' ini ADA di file CSS BOOTSTRAP -->
+                <button class="btn btn-danger" onclick="resetCat()">Reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-2" id="flex-cat-gen">
+            
+        </div>
+    </div>
+
+    <!--
+        CHALLENGE-3 : Rock, Paper, Scissor PT.1
+    -->
+    <div class="container-3">
+        <h2>CHALLENGE-3 : Rock, Paper, Scissor</h2>
+        <div class="flex-box-container-3">
+            <button class="btn btn-danger" onclick="resetRps()">Reset</button>
+        </div>
+    
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="images/rps_rock-clipart-clipart-harvestable-resources-rock.png" height=150 width=150 alt="" onclick="rpsGame(this)"/>
+            <img id="paper" src="images/rps_paper-clipart-nexxuz-Loose-Leaf-Paper.png" height=150 width=150 alt="" onclick="rpsGame(this)"/>
+            <img id="scissor" src="images/rps_female-hand-sign-victory-sign-peace-si_-vector-color-flat-ilustration-isolated-white-background-web-83128345.jpg" height=150 width=150 alt="" onclick="rpsGame(this)"/>
+        </div>
+    </div>
+
+    <!--
+        CHALLENGE 4 : Change Button Colors
+    -->
+    <div class="container-4">
+        <h2 id="change-my-color">CHALLENGE-4 : Change the Color of All Buttons</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>
+            </form>
+            <div><button class="btn btn-primary">Wee!</button></div>
+            <div><button class="btn btn-danger">Yahoo!</button></div>
+            <div><button class="btn btn-warning">Google!</button></div><!-- BUTTON ini BISA KUNING karena CSS BOOTSTRAP di ATAS -->
+            <div><button class="btn btn-success">Facebook!</button></div>
+        </div>
+    </div>
+
+    <!--
+        CHALLENGE 5 : How Black Jack Works
+    -->
+    <div class="container-5">
+        <h2>CHALLENGE-5 : How Black Jack Works</h2>
+        <h3><span id="blackjack-result">Let's Play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You : <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer : <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger" id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table>
+                <tbody>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draw</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draw">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container-6">
+        <h2>CHALLENGE-6 : AJAX & API's with Javascript</h2>
+        <div class="flex-ajax-row-1"></div>
+    </div>
+
+    <!-- script src="static/js/script.js"></script -->
+    <script src="script.js"></script>
+</body>
+</html>

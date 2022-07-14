@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>To-Do List App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="index3.css" />
+  <script src="index3.js"></script>
+
+  <style>
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(63, 45, 45);
+  text-decoration: none;
+  cursor: pointer;
+}
+  </style>
+</head>
+<body>
+  <div class="container-project-1">
+      <div class="container-1">
+          <h1>TO-DO LIST</h1>
+        
+          <div>
+            <input type="text" id="todo" name="todolist" value="Add an item!">
+            <button id="submit" onclick="submitList()">Submit</button>
+            <button id="reset" onclick="clearList()">Clear List</button>
+        
+            <br/><br/>
+          </div>
+      </div>
+    
+      <div class="container-2">
+          <div id="toDoList">
+            <ol id="listingToDo">
+              
+            </ol>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-project-2">
+    <h1>EXPENSE TRACKER</h1>
+    <h3>Add a New Item:</h3>
+    <form action=""></form>
+      <label for="name">Name</label>
+      <input type="text" id="spentName" value="Where was the expense made?"><br><br>
+      <label for="date">Date</label>
+      <input type="date" id="spentDate"><br><br>
+      <label for="amount">Amount</label>
+      <input type="text" id="spentPrice">
+    </form>
+
+    <br>
+    <button id="add-Expense" onclick="addExpense()">Add Expense</button>
+
+    <br><br>
+    <table border="1px">
+      <tbody id="spentTracker">
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Del Button</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="container-project-3">
+    <h1>NOTE TAKER</h1>
+    <h3>Add a New Note:</h3>
+    
+    <label for="note">Note</label>
+    <input type="text" id="note" value="Write your note here!">
+    <button id="add-note" onclick="noteInput()">Add Note</button>
+
+    <div id="listNote"></div>
+  </div>
+
+  <h2>MODAL EXAMPLE</h2>
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn" onclick="btn()">Open Modal</button>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the modal,,</p>
+    </div>
+  </div>
+
+  <div id="container-project-4">
+    <h1>VOWEL COUNTER</h1>
+    <label for="vowel">Enter a piece of text</label>
+    <input type="text" id="textVowel">
+    <button id="countVows" onclick="countVowel()">Check</button>
+  </div>
+
+  <div id="container-project-5">
+    <h1>MEMORY GAME</h1>
+    <div class="container-flip-row">
+      <div id="flip-card-1" class="flip-card-spot" onclick="clickImage('flip-card-1')"></div>
+      <div id="flip-card-2" class="flip-card-spot" onclick="clickImage('flip-card-2')"></div>
+      <div id="flip-card-3" class="flip-card-spot" onclick="clickImage('flip-card-3')"></div>
+    </div>
+    <div class="container-flip-row">
+      <div id="flip-card-4" class="flip-card-spot" onclick="clickImage('flip-card-4')"></div>
+      <div id="flip-card-5" class="flip-card-spot" onclick="clickImage('flip-card-5')"></div>
+      <div id="flip-card-6" class="flip-card-spot" onclick="clickImage('flip-card-6')"></div>
+    </div>
+    <div>
+      <p>Score match = <span id="match-score">0</span></p>
+      <p>Score failed = <span id="fail-score">0</span></p>
+    </div>
+  </div>
+  
+  <script>
+    //get the modal
+    var modal = document.getElementById("myModal");
+    //get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    //when the user clicks on <span> 'x', close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <!--
+    <p>Click "Try it" to execute the displayDate() function.</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+    document.getElementById("demo").innerHTML = Date();
+}
+</script>
+  -->
+</body>
+</html>

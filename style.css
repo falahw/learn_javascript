@@ -1,0 +1,163 @@
+/**
+* CHALLENGE-1 : Your Age in Days
+*/
+
+.container-1 {
+    /* ini BORDER PALING LUAR yang warna UNGU */
+    border: 1px solid greenyellow;
+    /* ini UKURAN '<div>' -berbanding- UKURAN WEB-PAGE
+    ini '75%' MAKSUDNYA adalah UKURAN 'container-1' cuma SEBESAR 75% dari MULAI PALING KIRI web-page
+    */
+    width: 75%;
+    /* JARAK KONTEN/'<div>' dengan PINGGIRAN web-page SEBELUM BORDER; dibikin '0' supaya GESER ke TENGAH */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ini untuk NGATUR <div class="flex-box-container-1"> YANG ada di PALING LUAR */
+.flex-box-container-1, .flex-box-rps {
+    /* 'display: flex' MAKE any OBJECT in web-pages DOESN'T STACK */
+    display: flex;
+    /* 'border' COLOR and THICKNESS are DEFINED here*/
+    border: 1px dotted black;
+    /* 'padding' DEFINE SPACE between BORDER and CONTENT*/
+    padding: 10px;
+    flex-wrap: wrap;
+    /* 'flex-direction' ini MENENTUKAN bagaimana tiap BLOK <DIV> akan DISUSUN */
+    flex-direction: row;
+    /* 'justify-content' FORCE OBJECTS to POSITION itself in web-pages
+    justify-content: flex-start;
+    justify-content: flex-end;
+    'space-around' will PUT CONTENT as CLOSEST it can to the MIDDLE of '<div>' EVENTLY
+    */
+    justify-content: space-around;
+}
+
+/* ini untuk NGATUR <div class="flex-box-container-1"> YANG ada di PALING DALAM */
+.flex-box-container-1 div {
+    display: flex;
+    /* 'value' + 'px/ANY metric' GAK BOLEH ada SPACE */
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+/**
+* CHALLENGE-2 : Cat Generator
+*/
+.container-2 {
+    border: 1px solid red;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-container-2 {
+    display: flex;
+    border: 1px solid blue;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex-box-container-2 img {
+    border: 1px solid green;
+    margin: 10px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 7);
+}
+
+/**
+* CHALLENGE-3 : Rock, Paper, Scissor PT.1
+*/
+.container-3 {
+    border: 1px solid green;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* TAG 'img:hover' means WHAT HAPPEN when CURSOR MOVE to the OBJECT */
+.flex-box-rps img:hover {
+    box-shadow: 0px 10px 50px rgba(37, 50, 233, 1);
+}
+
+/*.flex-box-rps-div {}*/
+
+.flex-box-container-3, .flex-ajax-row-1 {
+    display: flex;
+    border: 1px solid orange;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/**
+* CHALLENGE-4 : Change Button Colors
+*/
+.container-4 {
+    border: 1px solid blue;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-pick-color {
+    display: flex;
+    border: 1px solid purple;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/**
+* CHALLENGE-5 : How Black Jack Works
+*/
+.container-5, .container-6 {
+    border: 1px solid brown;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2 {
+    background: url("https://miro.medium.com/max/990/1*Srsktwm3384uYm4tgOlZkA.jpeg");
+    /* background: url("https://ie2-gfebf.cdnppb.net/mexchangeblackjack/turbo/17/assets/gameView/tableBackground.png?v17"); */
+    color: #ffffff;
+}
+
+.flex-blackjack-row-1 div {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+    height: 350px;
+    /* 'flex' GUNANYA untuk SAMA RATA LUAS flexbox DI DALAM '<div>' */
+    flex: 1;
+}
+
+.flex-blackjack-row-1 img {
+    width: 25%;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 button {
+    border: 1px solid red;
+}
+
+.flex-blackjack-row-2 div {
+    border: 1px solid white;
+    padding: 10px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 5px;
+}

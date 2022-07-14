@@ -1,0 +1,14 @@
+[
+    {
+        "__comment": "this is an OBJECT '{}' INSIDE an ARRAY '[]'",
+        "name": "Qazi",
+        "age": 25,
+        "height": 170
+    },
+
+    {
+        "name": "Rafeh",
+        "age": 25,
+        "height": 180
+    }
+]

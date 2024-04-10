@@ -205,7 +205,7 @@ console.log("isi 'copyAllButtons': ", copyAllButtons);
 
 //DIINGAT!! --> all_buttons/copyAllButtons[index].classList.add/remove("[class of element]");
 function buttonColorChange(buttonThingy) {
-    console.log(buttonThingy.value);
+    console.log("value 'buttonThingy': " + buttonThingy.value);
 
     if (buttonThingy.value === "red") {
         buttonsRed();
